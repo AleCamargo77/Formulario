@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
     <title>Formulário</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="title">
-            <h2>Criar uma Conta</h2>
+      <div class="title">
+        <h2>Criar uma Conta</h2>
+      </div>
+
+      <div id="form" class="form">
+        <div class="formControl error">
+          <label for="username">Nome de usuário</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite seu nome de usuário"
+          />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <i class="fa-solid fa-circle-check"></i>
+          <small>Mensagem de erro</small>
         </div>
 
-        <form id="form" class="form">
-            <div class="formControl error">
-                <label for="username">Nome de usuário</label>
-                <input type="text" id="username" placeholder="Digite seu nome de usuário">
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <i  class="fa-solid fa-circle-check"></i> 
-                <small>Mensagem de erro</small>
-            </div>
+        <div class="formControl error">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite seu email" />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <i class="fa-solid fa-circle-check"></i>
+          <small>Mensagem de erro</small>
+        </div>
 
-            <div class="formControl error">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Digite seu email">
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <i class="fa-solid fa-circle-check"></i> 
-                <small>Mensagem de erro</small>
-            </div>
-
-            <div class="formControl success">
-                <label for="password">Senha</label>
-                <input type="text" id="password" placeholder="Digite sua senha">
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <i class="fa-solid fa-circle-check"></i> 
-                <small>Mensagem de erro</small>
-            </div>
-            <div class="formControl">
+        <div class="formControl success">
+          <label for="password">Senha</label>
+          <input type="text" id="password" placeholder="Digite sua senha" />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <i class="fa-solid fa-circle-check"></i>
+          <small>Mensagem de erro</small>
+        </div>
+        <!-- <div class="formControl">
                 <label for="password-confirmation">Confirmação de senha</label>
                 <input type="text" id="password-confirmation" placeholder="Digite a senha novamente">
                 <i class="fa-solid fa-circle-exclamation"></i>
                 <i class="fa-solid fa-circle-check"></i>          
                 <small>Mensagem de erro</small>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-
-
+            </div> -->
+        <button id="play">Enviar</button>
+      </div>
     </div>
 
-
-    <script src="https://kit.fontawesome.com/af55734a67.js" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/af55734a67.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

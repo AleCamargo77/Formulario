@@ -15,34 +15,46 @@
         <h2>Criar uma Conta</h2>
       </div>
 
-      <div id="form" class="form">
-        <div class="formControl error">
+      <form id="form" class="form">
+        <div class="formControl">
           <label for="username">Nome de usuário</label>
           <input
             type="text"
-            id="username"
+            id="name"
             placeholder="Digite seu nome de usuário"
+            name="name"
           />
           <i class="fa-solid fa-circle-exclamation"></i>
           <i class="fa-solid fa-circle-check"></i>
-          <small>Mensagem de erro</small>
+          <small id="name-error">Mensagem de erro</small>
         </div>
 
-        <div class="formControl error">
+        <div class="formControl">
           <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Digite seu email" />
+          <input 
+            type="text"
+            id="email"
+            placeholder="Digite seu email"
+            name="email"
+
+          />
           <i class="fa-solid fa-circle-exclamation"></i>
           <i class="fa-solid fa-circle-check"></i>
-          <small>Mensagem de erro</small>
+          <small id="email-error" class="small">Mensagem de erro</small>
         </div>
 
-        <div class="formControl success">
+        <div class="formControl">
           <label for="password">Senha</label>
-          <input type="text" id="password" placeholder="Digite sua senha" />
+          <input
+            type="text"
+            id="password"
+            placeholder="Digite sua senha"
+            name="password"
+          />
           <i class="fa-solid fa-circle-exclamation"></i>
           <i class="fa-solid fa-circle-check"></i>
-          <small>Mensagem de erro</small>
-        </div>
+          <small id="password-error">Mensagem de erro</small>
+        </form>
         <!-- <div class="formControl">
                 <label for="password-confirmation">Confirmação de senha</label>
                 <input type="text" id="password-confirmation" placeholder="Digite a senha novamente">

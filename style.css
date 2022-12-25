@@ -67,7 +67,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .form button {
@@ -78,6 +78,8 @@ body {
   width: 100%;
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
 .formControl img {
@@ -85,15 +87,15 @@ body {
 }
 
 /* Error and Success */
-/* .formControl.success input {
-  border-color: #2ecc71;
+.success {
+  border-color: #2ecc71 !important;
 }
 
-.formControl.error input {
-  border-color: #e74c3c;
+.error {
+  border-color: #e74c3c !important;
 }
 
-.formControl.success i.fa-circle-check {
+/* .formControl.success i.fa-circle-check {
   color: #2ecc71;
   visibility: none;
 }
@@ -101,9 +103,9 @@ body {
 .formControl.error i.fa-circle-exclamation {
   color: #e74c3c;
   visibility: none;
-}
-
-.formControl.error small {
-  visibility: none;
-  color: #e74c3c;
 } */
+
+.small {
+  /* visibility: none; */
+  color: #e74c3c;
+}

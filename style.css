@@ -60,6 +60,7 @@ body {
   top: 35px;
   right: 10px;
   padding: 10px;
+  color: #e74c3c;
   visibility: hidden;
 }
 
@@ -95,17 +96,17 @@ body {
   border-color: #e74c3c !important;
 }
 
-/* .formControl.success i.fa-circle-check {
+.formControl.success i.fa-circle-check {
   color: #2ecc71;
-  visibility: none;
+  visibility: visible;
 }
 
 .formControl.error i.fa-circle-exclamation {
   color: #e74c3c;
-  visibility: none;
-} */
+  visibility: visible;
+}
 
 .small {
-  /* visibility: none; */
+  visibility: visible;
   color: #e74c3c;
 }

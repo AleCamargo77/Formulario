@@ -61,7 +61,7 @@ body {
   right: 10px;
   padding: 10px;
   color: #e74c3c;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .formControl small {
@@ -80,7 +80,6 @@ body {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-  margin-top: 1rem;
 }
 
 .formControl img {
@@ -96,11 +95,17 @@ body {
   border-color: #e74c3c !important;
 }
 
-.formControl.success i.fa-circle-check {
+#nameSuc,
+#emailSuc,
+#passSuc {
   color: #2ecc71;
-  visibility: visible;
+  visibility: hidden;
 }
 
+#name-logoError {
+  color: #e74c3c;
+  visibility: hidden;
+}
 .formControl.error i.fa-circle-exclamation {
   color: #e74c3c;
   visibility: visible;

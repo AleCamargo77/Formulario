@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script src="./main.js" defer></script>
-    <title>Formulário</title>
+    <title>Criar Conta</title>
   </head>
-
   <body>
     <div class="container">
       <div class="title">
-        <h2>Criar uma Conta</h2>
+        <h2>Criar uma Conta no App</h2>
       </div>
-
       <form id="form" class="form">
         <div class="formControl">
           <label for="username">Nome de usuário</label>
@@ -28,7 +26,6 @@
           <i id="name-logoError" class="fa-solid fa-circle-exclamation"></i>
           <small id="name-error" class="small"></small>
         </div>
-
         <div class="formControl">
           <label for="email">Email</label>
           <input
@@ -37,8 +34,8 @@
             placeholder="Digite seu email"
             name="email"
           />
-          <!-- <i class="fa-solid fa-circle-exclamation"></i> -->
           <i  id="emailSuc" class="fa-solid fa-circle-check"></i>
+          <i id="email-logoError" class="fa-solid fa-circle-exclamation"></i>
           <small id="email-error" class="small"></small>
         </div>
 
@@ -50,23 +47,13 @@
             placeholder="Digite sua senha"
             name="password"
           />
-          <!-- <i class="fa-solid fa-circle-exclamation"></i> -->
           <i id="passSuc" class="fa-solid fa-circle-check"></i>
+          <i id="password-logoError" class="fa-solid fa-circle-exclamation"></i>
           <small id="password-error" class="small"></small>
         </div>
-
          <button id="play">Enviar</button>
     </div> 
       </form>
-      <!-- <div class="formControl">
-                <label for="password-confirmation">Confirmação de senha</label>
-                <input type="text" id="password-confirmation" placeholder="Digite a senha novamente">
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <i class="fa-solid fa-circle-check"></i>          
-                <small>Mensagem de erro</small>
-            </div> -->
-    
-
     <script
       src="https://kit.fontawesome.com/af55734a67.js"
       crossorigin="anonymous"

@@ -8,7 +8,7 @@ function validateUsername(name) {
 }
 
 function validateEmail(email) {
-  if (!email.match(/^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i)) {
+  if (!email.match(/\w{2,}@[a-zA-Z]{2,}\.[a-zA-Z]{2,}/)) {
     const err = new Error("Email inválido");
     err.input = "email";
     throw err;
@@ -27,16 +27,6 @@ function validatePassword(password) {
     err.input = "password";
     throw err;
   }
-  const passwordValue = document.getElementById("password").value;
-  const paswordIsValid = passwordValue.match(
-    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/
-  );
-
-  if (paswordIsValid) {
-    console.log(passwordValue);
-  } else {
-    throw new Error("Password inválido");
-  }
 }
 
 function resetFormStyles(inputs) {
@@ -50,6 +40,12 @@ function resetFormStyles(inputs) {
   logoEmail.style.visibility = "hidden";
   const logoPass = document.getElementById("passSuc");
   logoPass.style.visibility = "hidden";
+  const nameErr = document.getElementById("name-logoError");
+  nameErr.style.visibility = "hidden";
+  const emailErr = document.getElementById("email-logoError");
+  emailErr.style.visibility = "hidden";
+  const passwordErr = document.getElementById("password-logoError");
+  passwordErr.style.visibility = "hidden";
 }
 
 const userInputs = {
@@ -78,12 +74,10 @@ form.addEventListener("submit", (ev) => {
     userInputs.password.classList.add("success");
     const logoPass = document.getElementById("passSuc");
     logoPass.style.visibility = "visible";
-
-    console.log(userInputs.email.value);
   } catch (err) {
     userInputs[err.input].classList.add("error");
     document.querySelector(`#${err.input}-error`).textContent = err.message;
     const nameErr = document.querySelector(`#${err.input}-logoError`);
-    console.log(nameErr);
+    nameErr.style.visibility = "visible";
   }
 });

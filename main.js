@@ -23,7 +23,10 @@ function validatePassword(password) {
     !password.match(/\d/) ||
     !password.match(/[^a-zA-Z\s0-9]/)
   ) {
-    const err = new Error("Senha inválida");
+    const err = new Error(
+      "Insira uma letra minúscula, maiúscula e caracter especial."
+    );
+
     err.input = "password";
     throw err;
   }

@@ -116,6 +116,10 @@ h2 {
   visibility: hidden;
 }
 
+#password-error {
+  font-size: 12px;
+}
+
 .formControl.error i.fa-circle-exclamation {
   color: #e74c3c;
   visibility: visible;

@@ -13,7 +13,7 @@ Desenvolvido com HTML, CSS e JS.
 
 ## 🤔 Funcionalidades e como acessar o projeto ?
 
-Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da página. No CSS, utilizado recursos para estilização e efeitos animados para garantir uma experiência ao usuário mais eficaz. Além de criar a aplicação de maneira responsiva, utilizando o processo de Mobile First. E por fim, utilizado JavaScript para trabalhar com funções, eventos e callbacks. Manipulação de DOM, objetos e arrays. Feito a validação dos inputs através de regex(expressões regulares), manipulado as possibilidades e excessões dentro blocos de try catch.
+Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da página. No CSS, utilizado recursos para estilização e efeitos animados para garantir uma experiência ao usuário mais eficaz. Além de criar a aplicação de maneira responsiva, utilizando o processo de Mobile First. E por fim, utilizado JavaScript para trabalhar com funções, eventos e callbacks. Manipulação de DOM, objetos e arrays. Feito a validação dos inputs através de regex(expressões regulares), manipulado as possibilidades e excessões dentro de bloco de try, catch.
   
  Interface:
   
